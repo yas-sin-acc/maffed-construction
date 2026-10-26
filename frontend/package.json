@@ -1,0 +1,7 @@
+{
+  "name": "maffed-frontend",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Maffed Construction website (static HTML/CSS/JS). Deploy the folder to GitHub Pages, Netlify or any static host.",
+  "scripts": { "start": "node server.js", "dev": "node server.js" }
+}

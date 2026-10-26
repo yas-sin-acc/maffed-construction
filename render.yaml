@@ -1,0 +1,23 @@
+# One-click backend hosting on Render (https://render.com): New > Blueprint > pick this repository.
+services:
+  - type: web
+    name: maffed-api
+    runtime: node
+    rootDir: backend
+    plan: free
+    buildCommand: echo "no dependencies to install"
+    startCommand: node server.js
+    healthCheckPath: /api/ping
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_KEY          # you type a long private password in the Render dashboard
+        sync: false
+      - key: ALLOWED_ORIGINS    # your website address, for example https://yourname.github.io
+        sync: false
+    # Free plans forget saved files when the service restarts. For permanent storage use a paid plan and add:
+    # disk:
+    #   name: maffed-data
+    #   mountPath: /var/data
+    #   sizeGB: 5
+    # and set the environment variable DATA_DIR=/var/data

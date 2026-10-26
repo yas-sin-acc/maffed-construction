@@ -1,0 +1,55 @@
+/* =====================================================================
+   THEME: change the look of the whole website here.
+   Edit a value, save, refresh the browser. No other file is needed.
+   (Structure and layout are in style.css: you normally do not touch it.)
+   Colors: any hex color, for example #0f5132.  Sizes: px, rem.
+   ===================================================================== */
+:root {
+  /* ---- COLORS ---- */
+  --primary: #0f5132;        /* main brand color: buttons, headings, header */
+  --primary-dark: #0a3622;   /* darker shade: hero, footer */
+  --primary-soft: #e8f3ec;   /* very light tint: soft section backgrounds */
+  --accent: #f2a900;         /* highlight color: main call-to-action buttons */
+  --accent-dark: #d99700;    /* accent when hovered */
+  --bg: #fafaf7;             /* page background */
+  --surface: #ffffff;        /* cards and forms */
+  --text: #1b2a23;           /* main text */
+  --muted: #66756d;          /* secondary text */
+  --line: #e4e9e5;           /* thin borders */
+
+  /* ---- SHAPES ---- */
+  --radius: 18px;            /* roundness of cards (0 = square) */
+  --radius-sm: 10px;         /* roundness of buttons and fields */
+  --shadow: 0 6px 24px rgba(15, 81, 50, .08);
+  --shadow-hover: 0 14px 36px rgba(15, 81, 50, .18);
+
+  /* ---- FONTS ---- */
+  --font-body: "Segoe UI", system-ui, Roboto, Arial, sans-serif;
+  --font-head: Georgia, "Times New Roman", serif;   /* try: "Segoe UI", sans-serif for a modern look */
+  --base-size: 16px;
+
+  /* ---- LAYOUT ---- */
+  --max-width: 1160px;       /* page width */
+  --section-space: 84px;     /* space above and below each section */
+  --header-height: 70px;
+  --hero-height: 600px;      /* height of the big banner */
+  --hero-overlay: linear-gradient(90deg, rgba(10,54,34,.92) 10%, rgba(10,54,34,.7) 50%, rgba(10,54,34,.12));
+
+  /* ---- SOCIAL ICON BAR (footer) ---- */
+  --social-bg: #0d1322;
+  --social-border: #1e293b;
+  --social-tile: #111a2e;
+  --social-icon: #a9b4c9;
+}
+
+/* ---- READY-MADE COLOR SETS ----
+   To use one: copy its :root{...} line into the "YOUR OWN EXTRA STYLES" area at the bottom.
+
+   BLUE (corporate):
+   :root{--primary:#0b3b66;--primary-dark:#072744;--primary-soft:#e7f0f8;--shadow:0 6px 24px rgba(11,59,102,.1);--shadow-hover:0 14px 36px rgba(11,59,102,.2);--hero-overlay:linear-gradient(90deg,rgba(7,39,68,.92) 10%,rgba(7,39,68,.7) 50%,rgba(7,39,68,.12))}
+
+   CHARCOAL AND ORANGE (strong builder look):
+   :root{--primary:#2b2f33;--primary-dark:#17191c;--primary-soft:#efefef;--accent:#ff7a00;--accent-dark:#e06c00;--shadow:0 6px 24px rgba(0,0,0,.1);--shadow-hover:0 14px 36px rgba(0,0,0,.2);--hero-overlay:linear-gradient(90deg,rgba(23,25,28,.93) 10%,rgba(23,25,28,.72) 50%,rgba(23,25,28,.15))}
+*/
+
+/* ---- YOUR OWN EXTRA STYLES: write anything below, it overrides everything above ---- */

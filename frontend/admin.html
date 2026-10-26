@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Owner panel | Maffed Construction</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <style>
+    body{background:var(--primary-soft)}
+    .top{background:var(--primary-dark);color:#fff;padding:16px 0}.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .box{background:var(--surface);border-radius:var(--radius);padding:22px;margin:16px 0;box-shadow:var(--shadow)}
+    .item{display:grid;grid-template-columns:210px 1fr;gap:18px}@media(max-width:700px){.item{grid-template-columns:1fr}}
+    .thumbs{display:grid;gap:6px;align-content:start}.thumbs img,.thumbs video{width:100%;max-height:150px;object-fit:cover;border-radius:10px}
+    .tag{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 10px;border-radius:99px;background:var(--primary-soft);color:var(--primary)}
+    .tag.pending{background:#fff1c9;color:#7a5a00}.tag.info{background:#dbeafe;color:#1e4fa3}.tag.rejected{background:#fde0e0;color:#a11}.tag.approved{background:#d6f5df;color:#0a6b2c}
+    .contactbox{background:var(--bg);border-radius:10px;padding:9px 13px;margin:10px 0;font-size:.9rem}
+    .btn.red{background:#d33}.btn.green{background:#1f8a5b}.btn.blue{background:#2563c9}
+    .stat{display:flex;gap:12px;flex-wrap:wrap}.stat div{flex:1;min-width:130px;background:var(--surface);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}.stat b{display:block;font-size:1.8rem;color:var(--primary)}
+  </style>
+</head>
+<body>
+  <div id="login" class="wrap" style="max-width:430px;padding-top:80px">
+    <form class="box form" id="lf" style="grid-template-columns:1fr">
+      <h2 class="t" style="font-size:1.7rem">Owner login</h2>
+      <label>Owner password<input type="password" id="key" required autofocus></label>
+      <button class="btn">Log in</button><p class="ok" id="lerr" style="color:#c00" hidden></p>
+      <a class="link" href="index.html">Back to website</a>
+    </form>
+  </div>
+  <div id="panel" hidden>
+    <div class="top"><div class="wrap"><b style="font-size:1.2rem;font-family:var(--font-head)">Maffed Construction: owner panel</b><span><a href="index.html" class="btn out sm">View website</a> <button class="btn out sm" id="out">Log out</button></span></div></div>
+    <div class="wrap"><div id="stats" class="stat" style="margin-top:20px"></div><div class="tabs" id="tabs"></div><div id="view"></div></div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

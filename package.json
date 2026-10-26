@@ -1,0 +1,12 @@
+{
+  "name": "maffed-construction",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Maffed Construction: frontend (static website) + backend (API).",
+  "scripts": {
+    "dev": "node dev.js",
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd frontend && node server.js",
+    "test": "cd backend && node --test"
+  }
+}

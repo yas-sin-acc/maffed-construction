@@ -1,0 +1,9 @@
+{
+  "name": "maffed-backend",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Maffed Construction API: posts, approvals, uploads, bids. No dependencies.",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": { "start": "node server.js", "dev": "node server.js", "test": "node --test" }
+}
